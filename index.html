@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quiz App</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Sewing Quiz</h1>
+
+    <form id="js-quiz-form">
+      <span class="quiz-question"> Which of the following is NOT a sewing machine manufacturer?</span><br><br>
+        <div class="quiz-answer-checkboxes">
+          <input type="radio" name="answer" value="answer1" checked> Bernina<br>
+          <input type="radio" name="answer" value="answer2"> Jackson<br>
+          <input type="radio" name="answer" value="answer3"> Davis<br>
+          <input type="radio" name="answer" value="answer4"> Brother<br>
+        </div>
+        <div class="feedback">
+          <span>Correct!</span><br><br>
+        </div>
+        <button type="submit">Submit Answer</button>
+    </form>
+
+   
+    <div class='quiz-info'>
+      <span class="question-number">You are on question  1</span><span class="out-of"> out of 1</span>
+      <br>
+      <br>
+      <div class="current-score">
+        <span id="correct-answers"">0 correct</span><span id="incorrect-answers"> out of 5</span>
+      </div>
+      <div class="final-score">
+        <span>You scored: </span><br><br>
+        <span id="correct-answers"">0 correct</span><span id="incorrect-answers"> out of 5</span>
+        <form id="restart-game">
+         <span>Would you like to try again?  If so, click here</span><br><br>
+         <button type="submit">Restart Game</button>
+       </form>
+      </div>
+    </div>
+ <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
