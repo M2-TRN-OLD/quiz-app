@@ -1,0 +1,35 @@
+Algorithms
+
+QUESTION APPEARS
+ The user clicks a button on screen to start the quiz.
+ Function:
+   *  The first question appears between span with class "quiz-question".  
+   *  The answers for that question appear in each of V <span class="quiz-question"></span>.
+
+ Function:
+  * questionCounter = 1.
+  * qcounter in question - number
+
+ Function:
+  * correctCounter = 0
+  * incorrectCounter = 0
+  * span id="correct-answers"=correctCounter + ' correct'.
+  * span id="incorrect-answers"=incorrectCounter + ' incorrect'.
+
+  USER SUBMITS ANSWER
+
+  Function:
+  * if the answer is correct, 
+          <div class="feedback">
+          <span>Correct!</span><br><br>
+          </div>
+  *  if the answer is incorrect,
+          <div class="feedback">
+            <span>Incorrect.  The correct answer is questionContent[questionCounter].correctChoice for that question.</span><br><br>
+          </div>
+
+  ALL QUESTIONS HAVE BEEN ANSWERED.  QUIZ IS COMPLETE.'
+
+  Function
+    * once questionCounter= content.length, show overall score and button to start new game.
+
