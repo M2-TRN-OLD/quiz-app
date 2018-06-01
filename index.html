@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Quiz App</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
   <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
  <h1>Sewing Quiz</h1>
  <div class="start-quiz">
    <button id="start-quiz" type="submit">Click to Start the Quiz</button>
  </div>
 
-  <div class="container" hidden="true">
-    <form id="js-quiz-form">
-      <div class="qAndAContent">
-      
-      </div>
-        <div class="feedback"><br>
-          <span id="make-selection" hidden="true">Please make a selection</span>
-        </div>
-        <input type="submit" id="submit" value="Submit"></input>
-        <input type="button" id="next-question" value="Next Question" hidden='true'></input>
-    </form>
+<div class="container" hidden="true">
 
+    <form id="js-quiz-form">
+      <div id="qnumber"></div>
+      <div class="qAndAContent">
+      </div>
+      <div class="feedback"><br>
+        <span id="make-selection" hidden="true">Please make a selection</span>
+      </div>
+      <input type="submit" id="submit" value="Submit"></input>
+    </form>
    
     <div class='quiz-info'>
-      <span id="question-number">You are on question  1</span><span id="out-of"> out of 1</span>
-      <br>
-      <br>
+      
       <div class="current-score">
         <span id="correct-answers"></span><span id="incorrect-answers"></span>
+      </div>
+      <div class = "answerfeedback">
+        <span id="answerdetail"></span>
       </div>
       <div class="final-score" hidden>
         <span>You scored: </span><br><br>
@@ -43,7 +44,10 @@
        </form>
       </div>
     </div>
- <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 <script src="quizapp.js"></script>
 <script src="content.js"></script>
 </body>
